@@ -117,6 +117,7 @@ body {
     font-size: 24px;
     -ms-flex-negative: 1;
     flex-shrink: 1;
+    margin-bottom:10px;
     padding-top: 35px; }
   .section-header-content {
     -webkit-box-flex: 1;
@@ -141,7 +142,7 @@ body {
       font-family: 'Montserrat', sans-serif;
       line-height: 32px;
       margin: 0 auto;
-      margin-bottom: 44px; }
+      margin-bottom: 30px; }
     @media (max-width: 575px) {
       .section-header .section-header-wrapper__title {
         font-size: 40px; }
