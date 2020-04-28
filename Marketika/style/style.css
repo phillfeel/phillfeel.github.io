@@ -118,6 +118,7 @@ body {
     -ms-flex-negative: 1;
     flex-shrink: 1;
     margin-bottom:10px;
+    padding-bottom: 10px;
     padding-top: 35px; }
   .section-header-content {
     -webkit-box-flex: 1;
