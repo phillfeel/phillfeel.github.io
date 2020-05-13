@@ -1,0 +1,220 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none; }
+  * a {
+    text-decoration: none; }
+
+body {
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  color: #1E2B22;
+  background-image: linear-gradient(to bottom, #FE7171 -20%, #ffc837 100%); }
+
+.outer {
+  margin: 0 auto; }
+
+.inner {
+  max-width: 1100px;
+  min-width: 500px;
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.header .inner {
+  height: 100vh;
+  display: flex;
+  align-items: center; }
+
+.header .hero {
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px; }
+
+.header__title {
+  max-width: 500px;
+  height: 200px;
+  border-radius: 4px;
+  border: 5px solid white;
+  text-align: center; }
+  .header__title p {
+    font-weight: 600;
+    color: white;
+    font-size: 70px;
+    letter-spacing: .15em;
+    line-height: 200px; }
+
+.header__subtitle {
+  margin-top: 20px;
+  width: 500px;
+  text-align: center;
+  color: #ffffff; }
+  .header__subtitle p {
+    font-size: 20px; }
+
+.main__sites {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .main__sites .card {
+    text-align: center;
+    width: 500px;
+    margin-top: 50px;
+    border-radius: 7px;
+    border: 2px solid #D2D2D2; }
+    .main__sites .card .image {
+      width: 500px;
+      height: 280px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border-radius: 6px; }
+      .main__sites .card .image .text {
+        white-space: nowrap;
+        overflow: hidden;
+        border-radius: 6px;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(255, 245, 224, 0.9);
+        font-weight: 600;
+        font-size: 40px;
+        color: #404547;
+        opacity: 0;
+        transition: .7s; }
+        .main__sites .card .image .text:before {
+          display: inline-block;
+          height: 100%;
+          vertical-align: middle;
+          content: ""; }
+        .main__sites .card .image .text .wrap {
+          display: inline-block;
+          vertical-align: middle; }
+        .main__sites .card .image .text p:last-child {
+          font-size: 20px;
+          font-weight: 400; }
+        .main__sites .card .image .text:hover {
+          opacity: 1; }
+    .main__sites .card .image-1 {
+      background-image: url(../img/marketika.jpg); }
+    .main__sites .card .image-2 {
+      background-image: url(../img/interior.jpg); }
+    .main__sites .card .image-3 {
+      background-image: url(../img/uber-eat.jpg); }
+    .main__sites .card .image-4 {
+      background-image: url(../img/afrianska.jpg); }
+  .main__sites .card-1 {
+    order: 1; }
+
+.footer__text {
+  text-align: center;
+  margin-bottom: 30px; }
+  .footer__text p {
+    font-size: 20px;
+    font-weight: 600; }
+
+.footer__contact {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 660px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .footer__contact .number {
+    width: 170px;
+    height: 70px;
+    margin-right: 20px; }
+    .footer__contact .number a {
+      color: #ffffff;
+      transition: .4s; }
+      .footer__contact .number a:hover {
+        color: #DAFFCA; }
+    .footer__contact .number .icons {
+      float: left; }
+    .footer__contact .number .call {
+      line-height: 65px; }
+    .footer__contact .number .tel {
+      display: block;
+      width: 40px;
+      color: #404547;
+      transition: .4s; }
+      .footer__contact .number .tel:after {
+        width: 50px;
+        height: 50px;
+        content: "\f098";
+        font-family: 'FontAwesome';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em; }
+      .footer__contact .number .tel:hover {
+        color: #41DB00; }
+    .footer__contact .number .whats {
+      display: block;
+      width: 40px;
+      color: #404547;
+      transition: .4s; }
+      .footer__contact .number .whats:after {
+        width: 50px;
+        height: 50px;
+        content: "\f232";
+        font-family: 'FontAwesome';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em; }
+      .footer__contact .number .whats:hover {
+        color: #41DB00; }
+  .footer__contact .mail {
+    height: 40px;
+    margin-right: 20px; }
+    .footer__contact .mail a {
+      color: #ffffff;
+      margin-left: 10px;
+      transition: .4s; }
+      .footer__contact .mail a:hover {
+        color: #DAFFCA; }
+    .footer__contact .mail .txt {
+      display: inline-block;
+      margin-top: 5px; }
+    .footer__contact .mail .email {
+      float: left;
+      color: #404547; }
+      .footer__contact .mail .email:after {
+        content: "\f0e0";
+        width: 50px;
+        height: 50px;
+        font-family: 'FontAwesome';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em; }
+      .footer__contact .mail .email:hover {
+        color: #a1907c; }
+  .footer__contact .tg-link {
+    margin-right: 20px; }
+  .footer__contact .telegram {
+    color: #404547;
+    transition: .4s; }
+    .footer__contact .telegram:after {
+      content: "\f1d8";
+      width: 50px;
+      height: 50px;
+      font-family: 'FontAwesome';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 1.6em; }
+    .footer__contact .telegram:hover {
+      color: #52b6d9; }
+  .footer__contact .git {
+    transition: .4s;
+    color: #404547; }
+  .footer__contact .git:after {
+    content: "\f09b";
+    width: 50px;
+    height: 50px;
+    font-family: 'FontAwesome';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2.2em; }
+  .footer__contact .git:hover {
+    color: #52b6d9; }
+
+/*# sourceMappingURL=style.css.map */

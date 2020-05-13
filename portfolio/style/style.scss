@@ -1,0 +1,365 @@
+//MIXIN
+
+//variables
+
+
+// commons
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    color: #1E2B22;
+    background-image: linear-gradient(to bottom, #FE7171 -20%, #ffc837 100%);
+
+
+
+}
+
+.outer {
+    margin: 0 auto;
+}
+
+.inner {
+    max-width: 1100px;
+    min-width: 500px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+//HEAD
+
+.header {
+    .inner {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero {
+        margin-left: auto;
+        margin-right: auto;
+        height: 300px;
+
+
+    }
+
+    &__title {
+        max-width: 500px;
+        height: 200px;
+        border-radius: 4px;
+        border: 5px solid white;
+        text-align: center;
+
+        p {
+            font-weight: 600;
+            color: white;
+            font-size: 70px;
+            letter-spacing: .15em;
+            line-height: 200px;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 20px;
+        width: 500px;
+        text-align: center;
+        color: #ffffff;
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+}
+
+.main {
+    .inner {}
+
+    &__sites {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .card {
+            text-align: center;
+            width: 500px;
+            margin-top: 50px;
+            border-radius: 7px;
+            border: 2px solid #D2D2D2;
+
+            .image {
+                width: 500px;
+                height: 280px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                border-radius: 6px;
+
+
+
+                .text {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    border-radius: 6px;
+                    height: 100%;
+                    width: 100%;
+                    background-color:
+                        rgba(#FFF5E0, .9);
+
+                    font-weight: 600;
+                    font-size: 40px;
+                    color: #404547;
+                    opacity: 0;
+                    transition: .7s;
+
+                    &:before {
+                        display: inline-block;
+                        height: 100%;
+                        vertical-align: middle;
+                        content: "";
+                    }
+
+                    .wrap {
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+
+                    p:last-child {
+                        font-size: 20px;
+                        font-weight: 400;
+                    }
+
+                    &:hover {
+                        opacity: 1;
+                    }
+
+                }
+            }
+
+            .image-1 {
+                background-image: url(../img/marketika.jpg);
+            }
+
+            .image-2 {
+                background-image: url(../img/interior.jpg);
+            }
+
+            .image-3 {
+                background-image: url(../img/uber-eat.jpg);
+            }
+
+            .image-4 {
+                background-image: url(../img/afrianska.jpg);
+            }
+
+        }
+
+        .card-1 {
+            order: 1;
+        }
+    }
+}
+
+
+
+// FOOTER 
+
+.footer {
+    .inner {}
+
+    &__text{
+        text-align: center;
+        margin-bottom: 30px;
+        p{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+    }
+    
+    
+    
+    &__contact {
+        margin-left: auto;
+        margin-right: auto;
+
+        max-width: 660px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .number {
+            width: 170px;
+            height: 70px;
+            margin-right: 20px;
+
+            a {
+                color: #ffffff;
+                transition: .4s;
+
+                &:hover {
+                    color: #DAFFCA;
+                }
+            }
+
+            .icons {
+                float: left;
+            }
+
+            .call {
+                line-height: 65px;
+            }
+
+            .tel {
+                display: block;
+                width: 40px;
+                color: #404547;
+
+                &:after {
+                    width: 50px;
+                    height: 50px;
+                    content: "\f098";
+                    font-family: 'FontAwesome';
+                    font-weight: normal;
+                    font-style: normal;
+                    font-size: 2em;
+
+
+                }
+
+                transition: .4s;
+
+                &:hover {
+                    color: #41DB00;
+
+                }
+            }
+
+            .whats {
+                display: block;
+                width: 40px;
+                color: #404547;
+
+                &:after {
+
+                    width: 50px;
+                    height: 50px;
+                    content: "\f232";
+                    font-family: 'FontAwesome';
+                    font-weight: normal;
+                    font-style: normal;
+                    font-size: 2em;
+
+                }
+
+                transition: .4s;
+
+                &:hover {
+                    color: #41DB00;
+
+                }
+            }
+        }
+
+        .mail {
+            height: 40px;
+            margin-right: 20px;
+
+            a {
+                color: #ffffff;
+                margin-left: 10px;
+                transition: .4s;
+
+                &:hover {
+                    color: #DAFFCA;
+                }
+
+            }
+
+            .txt {
+                display: inline-block;
+                margin-top: 5px;
+            }
+
+
+            .email {
+                float: left;
+                color: #404547;
+
+                &:after {
+                    content: "\f0e0";
+                    width: 50px;
+                    height: 50px;
+                    font-family: 'FontAwesome';
+                    font-weight: normal;
+                    font-style: normal;
+                    font-size: 2em;
+
+                }
+
+                &:hover {
+                    color: #a1907c;
+                }
+            }
+        }
+        .tg-link{
+            margin-right: 20px;
+        }
+        .telegram {
+            color: #404547;
+
+            &:after {
+                content: "\f1d8";
+                width: 50px;
+                height: 50px;
+                font-family: 'FontAwesome';
+                font-weight: normal;
+                font-style: normal;
+                font-size: 1.6em;
+
+            }
+
+            transition: .4s;
+
+            &:hover {
+                color: #52b6d9;
+            }
+        }
+
+
+        .git {
+            transition: .4s;
+            color: #404547;
+        }
+
+        .git:after {
+            content: "\f09b";
+            width: 50px;
+            height: 50px;
+            font-family: 'FontAwesome';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 2.2em;
+
+        }
+
+        .git:hover {
+            color: #52b6d9;
+        }
+
+    }
+}
