@@ -736,6 +736,7 @@ a {
     }
 
     .hero__info-button button {
+        border: none;
         width: 65%;
         padding: 15px;
     
